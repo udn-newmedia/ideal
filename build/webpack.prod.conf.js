@@ -82,7 +82,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       chunksSortMode: 'dependency'
     }),
     new HtmlWebpackPlugin({
-      filename: config.build.wang,
+      filename: config.build.ding,
       template: 'ding.html',
       chunks: ['vendor', 'manifest', 'ding'],
       inject: true,

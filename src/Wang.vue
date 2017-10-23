@@ -43,12 +43,15 @@
 			<p><br/></p>
 			<p><br/></p>
 			<div class="row">
-				<div class="col-sm-6">
-					<ImageContain :src="wang2" :src-web="wang2_web" imgSay="王琄贏得過三座金鐘獎的肯定，2005年以《再見，忠貞二村》奪下金鐘獎戲劇節目女主角獎。報系資料照"/>
+				<div class="col-sm-6 left">
+					<ImageContain :src="wang2" :src-web="wang2_web"/>
+					<div class="img-say hidden-md hidden-lg">王琄贏得過三座金鐘獎的肯定，2005年以《再見，忠貞二村》奪下金鐘獎戲劇節目女主角獎。報系資料照</div>
 				</div>
 				<div class="col-sm-6 right">
-					<ImageContain :src="wang3" :src-web="wang3_web" imgSay="2005年王琄首度接拍偶像劇，在《王子變青蛙》中飾演金枝媽媽，拋開外貌包袱，也讓她發現自己演喜劇的天份。照片來源／麥田出版提供"/>
+					<ImageContain :src="wang3" :src-web="wang3_web"/>
+					<div class="img-say hidden-md hidden-lg">2005年王琄首度接拍偶像劇，在《王子變青蛙》中飾演金枝媽媽，拋開外貌包袱，也讓她發現自己演喜劇的天份。照片來源／麥田出版提供</div>
 				</div>
+				<div class="img-say hidden-xs hidden-sm" style="clear:both;">（左）王琄贏得過三座金鐘獎的肯定，2005年以《再見，忠貞二村》奪下金鐘獎戲劇節目女主角獎。報系資料照<br/>（右）2005年王琄首度接拍偶像劇，在《王子變青蛙》中飾演金枝媽媽，拋開外貌包袱，也讓她發現自己演喜劇的天份。照片來源／麥田出版提供</div>
 			</div>
 			<p><br/></p>
 			<p><br/></p>
@@ -122,21 +125,21 @@
 			</Editor>
 			<p><br/></p>
 			<Relate>
-				<a href="./light.html" target="_blank" slot="relate-1">
+				<a href="./wang.html" target="_blank" slot="relate-1">
 					<img src="http://via.placeholder.com/480x304"/>
-					<p>我們長大，把光亮帶回黑暗家鄉</p>
+					<p>金鐘影后王琄：允許大齡的自己，像小baby重新學走路</p>
 				</a>
-				<a href="https://udn.com/news/story/10722/2707319" target="_blank" slot="relate-2">
+				<a href="./xie.html" target="_blank" slot="relate-2">
 					<img src="http://via.placeholder.com/480x304"/>
-					<p>助脫貧…教技能 推存錢帳戶</p>
+					<p>廟口也能是舞台 謝哲青想的「退休」不一樣</p>
 				</a>
-				<a href="https://udn.com/news/story/7266/2698622?from=crm4-referralnews_ch2artbottom" target="_blank" slot="relate-3">
+				<a href="./ding.html" target="_blank" slot="relate-3">
 					<img src="http://via.placeholder.com/480x304"/>
-					<p>兒少發展帳戶推動3個月 申請率25%</p>
+					<p>54歲辭去董事長 丁菱娟第三人生勇敢追夢</p>
 				</a>
-				<a href="https://p.udn.com.tw/upf/newmedia/2016_data/20161003_quicksand_middle_age/index.html" target="_blank" slot="relate-4">
+				<a href="./check.html" target="_blank" slot="relate-4">
 					<img src="http://via.placeholder.com/480x304"/>
-					<p>流沙中年 棄6萬月新顧爸媽，我在貧窮線下度日</p>
+					<p>三大退休族 達人教你理財術</p>
 				</a>
 			</Relate>
 			<p><br/></p>
@@ -245,6 +248,12 @@ export default {
 		height: 211px;
 		bottom: 10%;
 	}
+	.col-sm-6.left{
+        padding-right: 10px;
+    }
+    .col-sm-6.right{
+        padding-left: 10px;
+    }
 }
 
 </style>

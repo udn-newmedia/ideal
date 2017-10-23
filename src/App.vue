@@ -7,7 +7,7 @@
 			<div class="hbutton" data-target="3">邊緣弱勢人數倍增</div>
 			<div class="hbutton" data-target="4">解方篇</div>
 		</HeadBar>
-		<CoverFixedBg src="http://via.placeholder.com/750x1334" srcWeb="http://via.placeholder.com/1440x900">
+		<CoverFixedBg src="http://via.placeholder.com/750x1334" srcWeb="http://via.placeholder.com/1920x1337">
 			<h1>理想大人指南<br/>迎接百歲時代</h1>
 		</CoverFixedBg>
 		<ContentContainer backgroundColor="#FFFFFF">
@@ -51,10 +51,8 @@
 			<p><br/></p>
 			<p>「過去人生分成求學、工作、退休三階段，退休就是休息、撤退，但現在這樣的觀念該『退休』了。」中正大學高齡教育研究中心主任魏惠娟指出，歐美、日本已開始提倡燦爛七十、百歲人生等新觀念，「退休只是從一個工作退出，不是人生從此停下。」</p>
 		</ContentContainer>
-		<FixedBackground :src="main1" :srcWeb="main1_web" />
+		<FixedBackground :src="main1" :srcWeb="main1_web" titletext1="退而不休" titletext2="活用上半場的第二春" />
 		<ContentContainer backgroundColor="#FFFFFF">
-			<h2>退而不休 活用上半場的第二春</h2>
-			<p><br/></p>
 			<p>「繼續工作精神有寄託，身體也比較好啦！」走進崇友實業旗下子公司「好厝邊科技」的工廠，裡面多數員工頭髮已顯灰白，但仍目光炯炯、專注於手上的工作。在好厝邊，有6成員工都是退休後再回聘，<b>年齡最大的已66歲。</b></p>
 			<p><br/></p>
 			<p>好厝邊於2000年創立，一開始原本規畫做社區寬頻網路，但沒有成功，後來與母公司崇友緊密連結，做電梯保養、維修等後續服務，近年再轉型，看中高齡化趨勢，專攻主打居家市場的真空氣動梭產品，讓行動不便的老人家能不受居家樓層限制。<b>退休員工們成為另類的「以老照顧老」</b>。</p>
@@ -109,10 +107,8 @@
 				</Relate>
 			</div>
 		</ContentContainer>
-		<FixedBackground :src="main4" :srcWeb="main4_web" />
+		<FixedBackground :src="main4" :srcWeb="main4_web" titletext1="高峰勇退" titletext2="老黑的下半場哲學" />
 		<ContentContainer backgroundColor="#FFFFFF">
-			<h2>高峰勇退 老黑的下半場哲學</h2>
-			<p><br/></p>
 			<p><b>「傳統意義上我是退休了，但我想的不是一般人定義的『退休』。」</b>今年57歲、綽號老黑的田臨斌，原本任職於外商公司，官居台灣分公司總經理，但在45歲事業巔峰時，做了一個跌破親朋好友眼鏡的決定。毅然決然離開職場，開啟他人生的下半場，現在成為作家，各地演講，偶爾抱著吉他，當起街頭藝人。</p>
 			<p><br/></p>
 			<p>老黑說，當時他工作已超過20年，沒有不順利，但心裡就是不甘願，想著「難道我這輩子就要這樣過了嗎？」若不提早思考和做些什麼，下一個20年就過了，屆時再做自己想做的事情，體力、條件、心態，可能都已經大不如前。</p>
@@ -159,8 +155,9 @@
 			<p>生死亦然。老黑認為，若把生死觀念帶進人生，就會發現自己其實沒有太多時間可以浪費、消磨，要開始規畫自己還有什麼事想做卻未做，開始想之後，人生的下半場就不會無聊。</p>
 			<p><br/></p>
 			<p><br/></p>
-			<h2>翻轉觀念、提早準備 迎接人生延長賽</h2>
-			<p><br/></p>
+		</ContentContainer>
+		<FixedBackground :src="main8" :srcWeb="main8_web" titletext1="翻轉觀念、提早準備" titletext2="迎接人生延長賽" />
+		<ContentContainer backgroundColor="#FFFFFF">
 			<p><b>「求學時花20幾年才建構個人價值觀，老後人生也需要時間建構。」</b>魏惠娟表示，未來每個人的生涯規畫，時間軸都會拉得很長，每個人都沒經驗，但「有規畫和沒規畫會差很多」，有規畫者，更有機會活躍老化。</p>
 			<p><br/></p>
 			<p>魏惠娟建議，健康、財務，是開始準備的第一步，且不論有沒有小孩、配偶，都要以「一個人生活」的假設來思考未來，才能應付各種狀況。</p>
@@ -209,9 +206,8 @@
 			<p><br/></p>
 			<p><br/></p>
 			<image-contain src="http://via.placeholder.com/335x400" srcWeb="http://via.placeholder.com/880x315" />
-		</ContentContainer>
-		<FixedBackground :src="main8" :srcWeb="main8_web" />
-		<ContentContainer backgroundColor="#FFFFFF">
+			<p><br/></p>
+			<p><br/></p>
 			<h2>燦爛百歲 不只屬於少數人</h2>
 			<p><br/></p>
 			<p>要好好迎接老，除了個人努力，政府也可以扮演助力。陳亮恭指出，台灣現在花了很多時間談長照，這是對的，但思考高齡政策，不能只有長照，眼光也應該擴及剩下 8成健康長者，除了長照，應兼顧失智、失能等預防，「照顧社會弱勢、與避免讓更多人成為弱勢」，兩件事一樣重要。</p>
@@ -236,21 +232,21 @@
 			</Editor>
 			<p><br/></p>
 			<Relate>
-				<a href="./light.html" target="_blank" slot="relate-1">
+				<a href="./wang.html" target="_blank" slot="relate-1">
 					<img src="http://via.placeholder.com/480x304"/>
-					<p>我們長大，把光亮帶回黑暗家鄉</p>
+					<p>金鐘影后王琄：允許大齡的自己，像小baby重新學走路</p>
 				</a>
-				<a href="https://udn.com/news/story/10722/2707319" target="_blank" slot="relate-2">
+				<a href="./xie.html" target="_blank" slot="relate-2">
 					<img src="http://via.placeholder.com/480x304"/>
-					<p>助脫貧…教技能 推存錢帳戶</p>
+					<p>廟口也能是舞台 謝哲青想的「退休」不一樣</p>
 				</a>
-				<a href="https://udn.com/news/story/7266/2698622?from=crm4-referralnews_ch2artbottom" target="_blank" slot="relate-3">
+				<a href="./ding.html" target="_blank" slot="relate-3">
 					<img src="http://via.placeholder.com/480x304"/>
-					<p>兒少發展帳戶推動3個月 申請率25%</p>
+					<p>54歲辭去董事長 丁菱娟第三人生勇敢追夢</p>
 				</a>
-				<a href="https://p.udn.com.tw/upf/newmedia/2016_data/20161003_quicksand_middle_age/index.html" target="_blank" slot="relate-4">
+				<a href="./check.html" target="_blank" slot="relate-4">
 					<img src="http://via.placeholder.com/480x304"/>
-					<p>流沙中年 棄6萬月新顧爸媽，我在貧窮線下度日</p>
+					<p>三大退休族 達人教你理財術</p>
 				</a>
 			</Relate>
 			<p><br/></p>
@@ -266,7 +262,7 @@ import HeadBar from '@/components/HeadBar.vue'
 import CoverFixedBg from '@/components/CoverFixedBg.vue'
 import ContentContainer from '@/components/Content.vue'
 import Share from '@/components/Share.vue'
-import FixedBackground from '@/components/FixedBackground.vue'
+import FixedBackground from '@/components/FixedBackgroundTitle.vue'
 import Quote from '@/components/Quote.vue'
 import ImageContain from '@/components/ImageContain.vue'
 import Logo from '@/components/Logo.vue'

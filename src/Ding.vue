@@ -33,7 +33,7 @@
             <p>「每天進辦公室一切都已經就緒，等著人家服侍你。」丁菱娟說，每次到活動現場，客戶總會說：「丁董，這只是個小活動，你怎麼來了！」下屬也經常告訴她：「老闆，我們來就好！」這樣安逸的生活，對喜歡冒險、接觸新鮮事物的她來說，失去挑戰和學習的動力。因此她45歲開始思考轉換跑道，50歲啟動接班計畫。接著，辦一場告別演唱會，正式從職場上畢業。</p>
             <p><br/></p>
             <p><br/></p>
-			<Quote text="人應該要在最高峰時優雅下台，而不是走下坡了才不得不離開。" />
+			<Quote text="“人應該要在最高峰時優雅下台，而不是走下坡了才不得不離開。”" />
 		</ContentContainer>
         <FixedBackground :src="ding1" :src-web="ding1_web" text="學生時代曾是民歌手的丁菱娟，為自己辦一場告別演唱會，一圓年輕時的夢想，用最獨特的方式華麗轉身，告別工作舞台。照片來源／取自丁菱娟臉書" />
         <ContentContainer backgroundColor="#FFFFFF">
@@ -48,14 +48,14 @@
             <p>「我現在的收入不到以前的五分之一，但是人生過得很有意義、活得很開心。」丁菱娟說，每一個人生階段目標不同，第一人生是求學階段，懵懵懂懂，摸索未來方向；第二人生是工作階段，汲汲營營，追求物質擁有。第三人生告別職場後，在智慧與能力兼具的狀態下，是該重新開始做自己、實現夢想的時候了。</p>
             <p><br/></p>
             <p><br/></p>
-            <Quote text="第三人生並不一定要完全放棄工作，但應該不一樣。" />
+            <Quote text="“第三人生並不一定要完全放棄工作，但應該不一樣。”" />
             <p><br/></p>
             <p><br/></p>
             <p>丁菱娟認為，現代人壽命愈來愈長，50、60歲是體力正好、財富有餘、經驗充足的時候，還是可以繼續工作，只是降低工作時間比例，不再朝九晚五；或是改變工作模式，例如當義工、顧問，將經驗回饋社會。工作目的不再是賺錢，而是為了持續學習和成長。</p>
             <p><br/></p>
             <p><br/></p>
             <div class="row">
-				<div class="col-sm-6">
+				<div class="col-sm-6 left">
 					<ImageContain :src="ding2" :src-web="ding2_web"/>
 				</div>
 				<div class="col-sm-6 right">
@@ -86,7 +86,7 @@
             <p>丁菱娟觀察，很多中年父母在孩子長大離家後，面臨「空巢期」，內心有嚴重的失落感。她建議父母在子女年過二十後，就要<b>「把子女當別人尊重」</b>，學會放手，克制對孩子滿滿的愛，更要找到自己的生活重心。</p>
             <p><br/></p>
             <p><br/></p>
-            <Quote text="50歲後離開職場的人更要懂得如何獨處、找自己的興趣，把自己的生活過好，這才是愛子女的方式。" />
+            <Quote text="“50歲後離開職場的人更要懂得如何獨處、找自己的興趣，把自己的生活過好，這才是愛子女的方式。”" />
             <p><br/></p>
             <p><br/></p>
             <p>對待另一半，則是<b>「把伴侶當朋友邀請」</b>。丁菱娟說，因為先生陪兩個孩子到國外念書，她留在台灣創業，與先生曾經分隔兩地十年。這十年間聚少離多，彼此能夠相敬如賓。等到孩子長大、先生回台灣後，每天相處在同一個屋簷下，反而容易發生摩擦。</p>
@@ -97,6 +97,8 @@
             <h2>保持好奇心 探索人生無限可能</h2>
             <p><br/></p>
             <p>面對第三人生，丁菱娟認為最重要的心態是保持一顆好奇心，不要老了什麼都覺得無趣，接受所有可能性。像是她擔任新創團隊導師，不僅年輕人從她身上學習經驗，她也從年輕人身上學習創意和新知。</p>
+            <p><br/></p>
+            <p>丁菱娟說，自己最大的特色就是想做什麼就去實踐，「我可能沒有計畫到一百分，想個二十分就先去做。」如果失敗，就轉個彎，總會闖出一條路。行動派的她，闖出一條探索第三人生的道路，踏上更美好的人生下半場旅程。</p>
             <p><br/></p>
             <p><br/></p>
             <div class="tip">
@@ -121,21 +123,21 @@
 			</Editor>
             <p><br/></p>
 			<Relate>
-				<a href="./light.html" target="_blank" slot="relate-1">
+				<a href="./wang.html" target="_blank" slot="relate-1">
 					<img src="http://via.placeholder.com/480x304"/>
-					<p>我們長大，把光亮帶回黑暗家鄉</p>
+					<p>金鐘影后王琄：允許大齡的自己，像小baby重新學走路</p>
 				</a>
-				<a href="https://udn.com/news/story/10722/2707319" target="_blank" slot="relate-2">
+				<a href="./xie.html" target="_blank" slot="relate-2">
 					<img src="http://via.placeholder.com/480x304"/>
-					<p>助脫貧…教技能 推存錢帳戶</p>
+					<p>廟口也能是舞台 謝哲青想的「退休」不一樣</p>
 				</a>
-				<a href="https://udn.com/news/story/7266/2698622?from=crm4-referralnews_ch2artbottom" target="_blank" slot="relate-3">
+				<a href="./ding.html" target="_blank" slot="relate-3">
 					<img src="http://via.placeholder.com/480x304"/>
-					<p>兒少發展帳戶推動3個月 申請率25%</p>
+					<p>54歲辭去董事長 丁菱娟第三人生勇敢追夢</p>
 				</a>
-				<a href="https://p.udn.com.tw/upf/newmedia/2016_data/20161003_quicksand_middle_age/index.html" target="_blank" slot="relate-4">
+				<a href="./check.html" target="_blank" slot="relate-4">
 					<img src="http://via.placeholder.com/480x304"/>
-					<p>流沙中年 棄6萬月新顧爸媽，我在貧窮線下度日</p>
+					<p>三大退休族 達人教你理財術</p>
 				</a>
 			</Relate>
 			<p><br/></p>
@@ -239,7 +241,13 @@ export default {
 		left: 232px;
 		height: 211px;
 		bottom: 10%;
-	}
+    }
+    .col-sm-6.left{
+        padding-right: 10px;
+    }
+    .col-sm-6.right{
+        padding-left: 10px;
+    }
 }
 
 </style>
