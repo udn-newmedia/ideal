@@ -60,7 +60,7 @@ export default {
         font-size: 55px;
     }
     .bg-title span{
-        background-color: #FFFFFF;
+        background-color: #A5DEE4;
     }
     .back-bg-contain{
         position: fixed;
@@ -72,7 +72,7 @@ export default {
         transition: opacity 0.7s ease;
     }
     #title2{
-        margin-left: 15px;
+        margin-left: 45px;
     }
     img{
         width: 100%;
@@ -85,7 +85,7 @@ export default {
             padding: 3px 5px;
         }
         #bg-title2{
-            margin-top: 10px;
+            margin-top: -6px;
         }
         #space{
             flex-grow: 1;

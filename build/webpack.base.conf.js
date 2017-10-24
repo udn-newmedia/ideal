@@ -12,7 +12,9 @@ module.exports = {
   entry: {
     app: './src/main.js',
     wang: './src/wang.js',
-    ding: './src/ding.js'
+    ding: './src/ding.js',
+    xie: './src/xie.js',
+    check: './src/check.js'
   },
   output: {
     path: config.build.assetsRoot,

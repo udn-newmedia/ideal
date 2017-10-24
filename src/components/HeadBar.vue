@@ -76,6 +76,7 @@ export default {
     #icon img {
         width: 130px;
         margin-top: -3px;
+        margin-left: 5px;
     }
     #hbutton{
         width: 46px;

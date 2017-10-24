@@ -11,6 +11,8 @@ module.exports = {
     index: path.resolve(__dirname, '../dist/index.html'),
     wang: path.resolve(__dirname, '../dist/wang.html'),
     ding: path.resolve(__dirname, '../dist/ding.html'),
+    xie: path.resolve(__dirname, '../dist/xie.html'),
+    check: path.resolve(__dirname, '../dist/check.html'),
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
     assetsPublicPath: './',

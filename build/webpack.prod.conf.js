@@ -96,6 +96,36 @@ const webpackConfig = merge(baseWebpackConfig, {
       // necessary to consistently work with multiple chunks via CommonsChunkPlugin
       chunksSortMode: 'dependency'
     }),
+    new HtmlWebpackPlugin({
+      filename: config.build.xie,
+      template: 'xie.html',
+      chunks: ['vendor', 'manifest', 'xie'],
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false,
+        removeAttributeQuotes: true
+        // more options:
+        // https://github.com/kangax/html-minifier#options-quick-reference
+      },
+      // necessary to consistently work with multiple chunks via CommonsChunkPlugin
+      chunksSortMode: 'dependency'
+    }),
+    new HtmlWebpackPlugin({
+      filename: config.build.check,
+      template: 'check.html',
+      chunks: ['vendor', 'manifest', 'check'],
+      inject: true,
+      minify: {
+        removeComments: true,
+        collapseWhitespace: false,
+        removeAttributeQuotes: true
+        // more options:
+        // https://github.com/kangax/html-minifier#options-quick-reference
+      },
+      // necessary to consistently work with multiple chunks via CommonsChunkPlugin
+      chunksSortMode: 'dependency'
+    }),
     // keep module.id stable when vender modules does not change
     new webpack.HashedModuleIdsPlugin(),
     // split vendor js into its own file

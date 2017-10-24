@@ -243,10 +243,9 @@ export default {
 		font-weight: bold;
 		letter-spacing: -1.7px;
 		line-height: 1.36;
-		width: 495px;
 		left: 232px;
 		height: 211px;
-		bottom: 10%;
+		bottom: 15%;
 	}
 	.col-sm-6.left{
         padding-right: 10px;

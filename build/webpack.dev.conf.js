@@ -44,6 +44,18 @@ module.exports = merge(baseWebpackConfig, {
       inject: true,
       chunks: ['vendor', 'manifest', 'ding'],
     }),
+    new HtmlWebpackPlugin({
+      filename: 'xie.html',
+      template: 'xie.html',
+      inject: true,
+      chunks: ['vendor', 'manifest', 'xie'],
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'check.html',
+      template: 'check.html',
+      inject: true,
+      chunks: ['vendor', 'manifest', 'check'],
+    }),
     new FriendlyErrorsPlugin()
   ]
 })
