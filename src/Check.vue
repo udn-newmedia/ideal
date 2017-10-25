@@ -255,6 +255,7 @@ export default {
 
     .col-sm-4{
         padding: 0;
+        cursor: pointer;
     }
 
     .btn-title{
