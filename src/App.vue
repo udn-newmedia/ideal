@@ -2,13 +2,14 @@
 	<div id="app">
 		<indicator color="#A5DEE4" />
 		<HeadBar color="#FFFFFF" buttonColor="#000000">
-			<div class="hbutton" data-target="1">住在貨櫃屋的女孩</div>
-			<div class="hbutton" data-target="2">等鄰居開門的男孩</div>
-			<div class="hbutton" data-target="3">邊緣弱勢人數倍增</div>
-			<div class="hbutton" data-target="4">解方篇</div>
+			<div class="hbutton" data-target="1">老員工活用上半場</div>
+			<div class="hbutton" data-target="2">老黑的下半場哲學</div>
+			<div class="hbutton" data-target="3">做好打延長賽準備</div>
+			<div class="hbutton" data-target="4">名人的大齡人生</div>
+			<div class="hbutton" data-target="5">三大退休族理財術</div>
 		</HeadBar>
-		<CoverFixedBg src="http://via.placeholder.com/750x1334" srcWeb="http://via.placeholder.com/1920x1337">
-			<h1>理想大人指南<br/>迎接百歲時代</h1>
+		<CoverFixedBg :src="bg" :srcWeb="bg_web">
+			<h1>理想大人指南<br/>人人90怎麼活</h1>
 		</CoverFixedBg>
 		<ContentContainer backgroundColor="#FFFFFF">
 			<Share href="https://udn.com/upf/newmedia/2017data/ideal/index.html"/>
@@ -38,7 +39,7 @@
 			<p><br/></p>
 			<p><br/></p>
 			<div class="chart-title">平均餘命年年上升</div>
-			<ImageContain :src="chart1" />
+			<div id="chart-1"></div>
 			<p><br/></p>
 			<p>但每個人都沒有老過，教育階段也從沒教如何迎接年齡增長、壽命延長，對「老」的印象、人生階段的想像，都來自上一代，或社會長年累積的模式。沒有太多想像的結果，就是常聽到長輩喊無聊，只能用打發、消磨時間來形容每天的生活，「宅老人」成常態。</p>
 			<p><br/></p>
@@ -51,7 +52,7 @@
 			<p><br/></p>
 			<p>「過去人生分成求學、工作、退休三階段，退休就是休息、撤退，但現在這樣的觀念該『退休』了。」中正大學高齡教育研究中心主任魏惠娟指出，歐美、日本已開始提倡燦爛七十、百歲人生等新觀念，「退休只是從一個工作退出，不是人生從此停下。」</p>
 		</ContentContainer>
-		<FixedBackground :src="main1" :srcWeb="main1_web" titletext1="退而不休" titletext2="活用上半場的第二春" />
+		<FixedBackground id="section-1" :src="main1" :srcWeb="main1_web" titletext1="退而不休" titletext2="活用上半場的第二春" />
 		<ContentContainer backgroundColor="#FFFFFF">
 			<p>「繼續工作精神有寄託，身體也比較好啦！」走進崇友實業旗下子公司「好厝邊科技」的工廠，裡面多數員工頭髮已顯灰白，但仍目光炯炯、專注於手上的工作。在好厝邊，有6成員工都是退休後再回聘，<b>年齡最大的已66歲。</b></p>
 			<p><br/></p>
@@ -89,25 +90,25 @@
 			<p><br/></p>
 			<p><br/></p>
 			<div class="tip">
-				<h2>標題待補專題報導</h2>
+				<h2>人生下半場 名人這麼過</h2>
 				<p><br/></p>
-				<Relate titleHidden="true">
-					<a href="./light.html" target="_blank" slot="relate-1">
-						<img src="http://via.placeholder.com/480x304"/>
-						<p>王娟</p>
+				<Relate3>
+					<a href="./wang.html" target="_blank" slot="relate-1">
+						<img class="lazyload" :src="famous1"/>
+						<p>金鐘影后王琄：允許大齡的自己，像小baby重新學走路</p>
 					</a>
-					<a href="https://udn.com/news/story/10722/2707319" target="_blank" slot="relate-2">
-						<img src="http://via.placeholder.com/480x304"/>
-						<p>謝哲青</p>
+					<a href="./xie.html" target="_blank" slot="relate-2">
+						<img class="lazyload" :src="famous2"/>
+						<p>廟口也能是舞台 謝哲青想的「退休」不一樣</p>
 					</a>
-					<a href="https://udn.com/news/story/7266/2698622?from=crm4-referralnews_ch2artbottom" target="_blank" slot="relate-3">
-						<img src="http://via.placeholder.com/480x304"/>
-						<p>丁菱娟</p>
+					<a href="./ding.html" target="_blank" slot="relate-3">
+						<img class="lazyload" :src="famous3"/>
+						<p>54歲辭去董事長 丁菱娟第三人生勇敢追夢</p>
 					</a>
-				</Relate>
+				</Relate3>
 			</div>
 		</ContentContainer>
-		<FixedBackground :src="main4" :srcWeb="main4_web" titletext1="高峰勇退" titletext2="老黑的下半場哲學" />
+		<FixedBackground id="section-2" :src="main4" :srcWeb="main4_web" titletext1="高峰勇退" titletext2="老黑的下半場哲學" />
 		<ContentContainer backgroundColor="#FFFFFF">
 			<p><b>「傳統意義上我是退休了，但我想的不是一般人定義的『退休』。」</b>今年57歲、綽號老黑的田臨斌，原本任職於外商公司，官居台灣分公司總經理，但在45歲事業巔峰時，做了一個跌破親朋好友眼鏡的決定。毅然決然離開職場，開啟他人生的下半場，現在成為作家，各地演講，偶爾抱著吉他，當起街頭藝人。</p>
 			<p><br/></p>
@@ -136,7 +137,7 @@
 				<div class="col-sm-6 right-small mt-20">
 					<ImageContain :src="main7" :srcWeb="main7_web"/>
 				</div>
-				<div class="img-say">從原本的職場「畢業」後，老黑寫作、出書，到各地演講分享經驗，也重拾年輕時喜愛的吉他，考取街頭藝人執照，在街頭演唱喜愛的歌曲。</div>
+				<div class="img-say">從原本的職場「畢業」後，老黑寫作、出書，到各地演講分享經驗，也重拾年輕時喜愛的吉他，考取街頭藝人執照，在街頭演唱喜愛的歌曲。圖／老黑提供</div>
 			</div>
 			<p><br/></p>
 			<p><br/></p>
@@ -156,11 +157,16 @@
 			<p><br/></p>
 			<p><br/></p>
 		</ContentContainer>
-		<FixedBackground :src="main8" :srcWeb="main8_web" titletext1="翻轉觀念、提早準備" titletext2="迎接人生延長賽" />
+		<FixedBackground id="section-3" :src="main8" :srcWeb="main8_web" titletext1="翻轉觀念、提早準備" titletext2="迎接人生延長賽" />
 		<ContentContainer backgroundColor="#FFFFFF">
 			<p><b>「求學時花20幾年才建構個人價值觀，老後人生也需要時間建構。」</b>魏惠娟表示，未來每個人的生涯規畫，時間軸都會拉得很長，每個人都沒經驗，但「有規畫和沒規畫會差很多」，有規畫者，更有機會活躍老化。</p>
 			<p><br/></p>
 			<p>魏惠娟建議，健康、財務，是開始準備的第一步，且不論有沒有小孩、配偶，都要以「一個人生活」的假設來思考未來，才能應付各種狀況。</p>
+			<p><br/></p>
+			<p><br/></p>
+			<div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/h1s9QEg5X3Y?rel=0" frameborder="0" allowfullscreen></iframe>
+            </div>
 			<p><br/></p>
 			<p><br/></p>
 			<h2>別依賴政府、子女 財務靠自己</h2>
@@ -172,7 +178,15 @@
 			<p>羅尤美特別提醒，從過去主計總處的調查來看，退休後有3分之1的收入來源，來自子女奉養及政府年金，但未來少子女化趨勢持續，政府年金也都有可能變動，「壓這麼高的比率在自己無法控制的變數上，太危險」，建議退休所需的財務至少8成以上都要「靠自己」，才是安全做法。</p>
 			<p><br/></p>
 			<p><br/></p>
-			<image-contain src="http://via.placeholder.com/335x400" />
+			<div class="tip">
+				<h2>財務Tips</h2>
+				<ul>
+					<li>提高退休財務自主度，個人準備的退休金比率應達八成</li>
+					<li>考量通膨</li>
+					<li>儲蓄不等於投資，依個人狀況規畫投資</li>
+				</ul>
+			</div>
+			<div id="draw-1"></div>
 			<p><br/></p>
 			<p><br/></p>
 			<h2>大腦和肌肉本錢 提早存</h2>
@@ -183,11 +197,18 @@
 			<p><br/></p>
 			<p>降低罹患失智風險，飲食上可採取地中海飲食，但同時保持蛋白質攝取；運動則可做「複雜型運動」，如跳舞、打鼓等，這些運動除了活動身體，也需要記憶動作和節奏，是 一舉兩得的運動類型。</p>
 			<p><br/></p>
-			<p><br/></p>
-			<image-contain src="http://via.placeholder.com/335x400" srcWeb="http://via.placeholder.com/880x315"/>
-			<p><br/></p>
-			<p><br/></p>
 			<p>「還有，要改變自己的人際關係。」陳亮恭說，臨床觀察，人愈來愈老，朋友也跟著愈來愈少，有些病人以前愛打麻將，但牌搭子過世之後，就再也不打牌了，興趣和社會互動瞬間斷裂，容易產生心理方面疾病。建議中年人在40、50歲時，就要多跟不同人互動、持續交新朋友，這樣的習慣才能一路保持到7、80歲。</p>
+			<p><br/></p>
+			<p><br/></p>
+			<div id="draw-2"></div>
+			<div class="tip" id="tip-2">
+				<h2>健康Tips</h2>
+				<ul>
+					<li>提升蛋白質攝取，減少老年肌肉流失</li>
+					<li>做複雜型的運動（如打鼓、跳舞）</li>
+					<li>維持健康生活型態（早睡早起、少喝酒等）</li>
+				</ul>
+			</div>
 			<p><br/></p>
 			<p><br/></p>
 			<h2>不斷提問 老後不空虛</h2>
@@ -205,7 +226,15 @@
 			<p>在找尋的過程中，則可以找一個一起規畫的夥伴。魏惠娟說，現在對退休人生的想像，還沒有足夠系統性的架構和討論，很容易在過程中迷失、挫折，夥伴可以是配偶，也可以是好友，若能有一個夥伴一起，可以互相扶持，「否則很容易因為被潑冷水，而走不下去。」</p>
 			<p><br/></p>
 			<p><br/></p>
-			<image-contain src="http://via.placeholder.com/335x400" srcWeb="http://via.placeholder.com/880x315" />
+			<div id="draw-3"></div>
+			<div class="tip" id="tip-3">
+				<h2>生涯Tips</h2>
+				<ul>
+					<li>思考下半場人生目標</li>
+					<li>重組生活時間地圖</li>
+					<li>找一個一起規劃的夥伴（親人、朋友都可）</li>
+				</ul>
+			</div>
 			<p><br/></p>
 			<p><br/></p>
 			<h2>燦爛百歲 不只屬於少數人</h2>
@@ -226,33 +255,32 @@
 				<div>插畫：黃微庭</div>
 				<div>網頁製作：鄭偉廷</div>
 				<div>攝影：鄭超文</div>
-				<div>照片來源：老黑提供</div>
 				<div>場地提供：Fujin Tree Landmark Cafe</div>
 				<div>2017.10.30</div>
 			</Editor>
 			<p><br/></p>
 			<Relate>
 				<a href="./wang.html" target="_blank" slot="relate-1">
-					<img src="http://via.placeholder.com/480x304"/>
+					<img class="lazyload" :data-src="relate2"/>
 					<p>金鐘影后王琄：允許大齡的自己，像小baby重新學走路</p>
 				</a>
 				<a href="./xie.html" target="_blank" slot="relate-2">
-					<img src="http://via.placeholder.com/480x304"/>
+					<img class="lazyload" :data-src="relate3"/>
 					<p>廟口也能是舞台 謝哲青想的「退休」不一樣</p>
 				</a>
 				<a href="./ding.html" target="_blank" slot="relate-3">
-					<img src="http://via.placeholder.com/480x304"/>
+					<img class="lazyload" :data-src="relate4"/>
 					<p>54歲辭去董事長 丁菱娟第三人生勇敢追夢</p>
 				</a>
 				<a href="./check.html" target="_blank" slot="relate-4">
-					<img src="http://via.placeholder.com/480x304"/>
+					<img class="lazyload" :data-src="relate5"/>
 					<p>三大退休族 達人教你理財術</p>
 				</a>
 			</Relate>
 			<p><br/></p>
 			<FBComment href="https://udn.com/upf/newmedia/2017_data/idel/index.html" />
-			
 		</ContentContainer>
+		<Foot background-color="#FFFFFF"/>
 	</div>
 </template>
 
@@ -268,10 +296,14 @@ import ImageContain from '@/components/ImageContain.vue'
 import Logo from '@/components/Logo.vue'
 import Editor from '@/components/Editor.vue'
 import Relate from '@/components/Relate.vue'
+import Relate3 from '@/components/Relate3.vue'
 import FBComment from '@/components/FBComment.vue'
 import Foot from '@/components/Footer.vue'
 
 import chart1 from '@/assets/chart_main1.jpg'
+
+import bg from '@/assets/cover_main.jpg'
+import bg_web from '@/assets/web/cover_main.jpg'
 
 import main1 from '@/assets/main1.jpg'
 import main2 from '@/assets/main2.jpg'
@@ -291,9 +323,20 @@ import main6_web from '@/assets/web/main6.jpg'
 import main7_web from '@/assets/web/main7.jpg'
 import main8_web from '@/assets/web/main8.jpg'
 
+import famous1 from '@/assets/famous1.jpg'
+import famous2 from '@/assets/famous2.jpg'
+import famous3 from '@/assets/famous3.jpg'
+
+import relate2 from '@/assets/relate2.jpg'
+import relate3 from '@/assets/relate3.jpg'
+import relate4 from '@/assets/relate4.jpg'
+import relate5 from '@/assets/relate5.jpg'
+
 export default {
 	data: function(){
 		return{
+			bg: bg,
+			bg_web: bg_web,
 			chart1: chart1,
 			main1: main1,
 			main2: main2,
@@ -310,11 +353,18 @@ export default {
 			main5_web: main5_web,
 			main6_web: main6_web,
 			main7_web: main7_web,
-			main8_web: main8_web		
+			main8_web: main8_web,
+			famous1: famous1,		
+			famous2: famous2,
+			famous3: famous3,
+			relate2: relate2,
+			relate3: relate3,
+			relate4: relate4,
+			relate5: relate5,
 		}
 	},
 	components: {
-    	Indicator, HeadBar, CoverFixedBg, ContentContainer, Share, Quote, ImageContain, FixedBackground, Logo, Editor, Relate, FBComment, Foot
+    	Indicator, HeadBar, CoverFixedBg, ContentContainer, Share, Quote, ImageContain, FixedBackground, Logo, Editor, Relate, Relate3, FBComment, Foot
 	}
 }
 </script>
@@ -351,6 +401,33 @@ export default {
 	.tip{
 		padding: 30px 20px;
 	}
+	#tip-2{
+		margin-top: -72px;
+	}
+	#tip-3{
+		margin-top: -40px;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+	#cover h1{
+		padding: 0 20px;
+		bottom: 64px;
+		text-align: left;
+		letter-spacing: -1.2px;
+		position: absolute;
+		font-weight: bold;
+		line-height: 1.5;
+	}
+	.tip{
+		padding: 30px 20px;
+	}
+	.col-sm-6.left{
+		padding-right: 10px;
+	}
+	.col-sm-6.right-small{
+		padding-left: 10px;
+	}
 }
 
 @media screen and (min-width: 1025px){
@@ -376,6 +453,16 @@ export default {
 		height: 211px;
 		bottom: 10%;
 	}
+	#draw-1{
+		margin-top: -90px;
+	}
+	#tip-2{
+		margin-top: -160px;
+	}
+	#tip-3{
+		margin-top: -90px;
+	}
 }
 
 </style>
+

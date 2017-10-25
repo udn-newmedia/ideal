@@ -58,8 +58,7 @@ export default {
     }
         
     #report .col-sm-6 img{
-        width: 208px;
-        height: 146px;
+        width: 100%;
     }
     @media screen and (max-width: 767px){
          #report .col-sm-6{
@@ -88,6 +87,16 @@ export default {
         #report .col-sm-6 img{
             width: 100%;
             height: auto;
+        }
+    }
+    @media screen and (min-width: 1025px){
+        .row{
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        #report .col-md-3{
+            padding-left: 10px;
+            padding-right: 10px;
         }
     }
 </style>

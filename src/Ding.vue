@@ -2,10 +2,21 @@
     <div id="app">
         <indicator color="#A5DEE4" />
 		<HeadBar color="#FFFFFF" buttonColor="#000000">
-			<div class="hbutton" data-target="1">住在貨櫃屋的女孩</div>
-			<div class="hbutton" data-target="2">等鄰居開門的男孩</div>
-			<div class="hbutton" data-target="3">邊緣弱勢人數倍增</div>
-			<div class="hbutton" data-target="4">解方篇</div>
+			<a href="./index.html" target="_blank">
+				<div class="hbutton" data-target="1">理想大人指南</div>
+			</a>
+			<a href="./wang.html" target="_blank">
+				<div class="hbutton" data-target="2">王琄的獨身大齡哲學</div>
+			</a>
+			<a href="./xie.html" target="_blank">
+				<div class="hbutton" data-target="3">謝哲青的無退休想像</div>
+			</a>
+			<a href="./ding.html" target="_blank">
+				<div class="hbutton hbutton-select" data-target="4">丁菱娟活出第三人生</div>
+			</a>
+			<a href="./check.html" target="_blank">
+				<div class="hbutton" data-target="5">三大退休族理財術</div>
+			</a>
 		</HeadBar>
 		<CoverFixedBg :src="bg" :srcWeb="bg_web">
 			<h1>54歲辭去董事長<br/>丁菱娟第三人生勇敢追夢</h1>
@@ -115,7 +126,7 @@
 			<Logo />
 			<p><br/></p>
 			<Editor>
-				<div>文字：蔡佩蓉</div>
+				<div>文字：蔡佩蓉、洪欣慈</div>
 				<div>視覺設計：張心慈</div>
 				<div>網頁製作：鄭偉廷</div>
 				<div>攝影：林俊良</div>
@@ -124,19 +135,19 @@
             <p><br/></p>
 			<Relate>
 				<a href="./wang.html" target="_blank" slot="relate-1">
-					<img src="http://via.placeholder.com/480x304"/>
-					<p>金鐘影后王琄：允許大齡的自己，像小baby重新學走路</p>
+					<img class="lazyload" :data-src="relate1"/>
+					<p>理想大人指南 迎接百歲時代</p>
 				</a>
 				<a href="./xie.html" target="_blank" slot="relate-2">
-					<img src="http://via.placeholder.com/480x304"/>
-					<p>廟口也能是舞台 謝哲青想的「退休」不一樣</p>
+					<img class="lazyload" :data-src="relate2"/>
+					<p>金鐘影后王琄：允許大齡的自己，像小baby重新學走路</p>
 				</a>
 				<a href="./ding.html" target="_blank" slot="relate-3">
-					<img src="http://via.placeholder.com/480x304"/>
-					<p>54歲辭去董事長 丁菱娟第三人生勇敢追夢</p>
+					<img class="lazyload" :data-src="relate3"/>
+					<p>廟口也能是舞台 謝哲青想的「退休」不一樣</p>
 				</a>
 				<a href="./check.html" target="_blank" slot="relate-4">
-					<img src="http://via.placeholder.com/480x304"/>
+					<img class="lazyload" :data-src="relate5"/>
 					<p>三大退休族 達人教你理財術</p>
 				</a>
 			</Relate>
@@ -176,6 +187,11 @@ import ding2_web from '@/assets/web/ding2.jpg'
 import ding3_web from '@/assets/web/ding3.jpg'
 import ding4_web from '@/assets/web/ding4.jpg'
 
+import relate1 from '@/assets/relate1.jpg'
+import relate2 from '@/assets/relate2.jpg'
+import relate3 from '@/assets/relate3.jpg'
+import relate5 from '@/assets/relate5.jpg'
+
 export default {
     data: function(){
 		return{
@@ -188,7 +204,11 @@ export default {
             ding1_web: ding1_web,
             ding2_web: ding2_web,
             ding3_web: ding3_web,
-            ding4_web: ding4_web,
+			ding4_web: ding4_web,
+			relate1: relate1,
+			relate2: relate2,
+			relate3: relate3,
+			relate5: relate5
 		}
 	},
 	components: {
@@ -237,8 +257,8 @@ export default {
 		font-weight: bold;
 		letter-spacing: -1.7px;
 		line-height: 1.36;
-		left: 232px;
-		bottom: 13%;
+		right: 100px;
+		bottom: 30%;
     }
     .col-sm-6.left{
         padding-right: 10px;

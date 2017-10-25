@@ -2,16 +2,27 @@
 	<div id="app">
 		<indicator color="#A5DEE4" />
 		<HeadBar color="#FFFFFF" buttonColor="#000000">
-			<div class="hbutton" data-target="1">住在貨櫃屋的女孩</div>
-			<div class="hbutton" data-target="2">等鄰居開門的男孩</div>
-			<div class="hbutton" data-target="3">邊緣弱勢人數倍增</div>
-			<div class="hbutton" data-target="4">解方篇</div>
+			<a href="./index.html" target="_blank">
+				<div class="hbutton" data-target="1">理想大人指南</div>
+			</a>
+			<a href="./wang.html" target="_blank">
+				<div class="hbutton" data-target="2">王琄的獨身大齡哲學</div>
+			</a>
+			<a href="./xie.html" target="_blank">
+				<div class="hbutton hbutton-select" data-target="3">謝哲青的無退休想像</div>
+			</a>
+			<a href="./ding.html" target="_blank">
+				<div class="hbutton" data-target="4">丁菱娟活出第三人生</div>
+			</a>
+			<a href="./check.html" target="_blank">
+				<div class="hbutton" data-target="5">三大退休族理財術</div>
+			</a>
 		</HeadBar>
 		<CoverFixedBg :src="bg" :srcWeb="bg_web">
 			<h1>廟口也能是舞台<br/>謝哲青想的「退休」不一樣</h1>
 		</CoverFixedBg>
 		<ContentContainer backgroundColor="#F1E9E4">
-			<Share href="https://udn.com/upf/newmedia/2017data/ideal/wang.html"/>
+			<Share href="https://udn.com/upf/newmedia/2017data/ideal/xie.html"/>
 			<p><br/></p>
 			<p>一生都在各地旅行的旅遊作家謝哲青，是作家，也是主持人、文史研究者。走訪過世界各國的他，給人的印象總是活躍，無法停下探索新事物的腳步。這樣的性格特色，更讓人好奇，他的人生字典裡，是否有「退休」二字，又是怎麼詮釋這個字眼。</p>
 			<p><br/></p>
@@ -103,24 +114,24 @@
 			<p><br/></p>
 			<Relate>
 				<a href="./wang.html" target="_blank" slot="relate-1">
-					<img src="http://via.placeholder.com/480x304"/>
-					<p>金鐘影后王琄：允許大齡的自己，像小baby重新學走路</p>
+					<img class="lazyload" :data-src="relate1"/>
+					<p>理想大人指南 迎接百歲時代</p>
 				</a>
 				<a href="./xie.html" target="_blank" slot="relate-2">
-					<img src="http://via.placeholder.com/480x304"/>
-					<p>廟口也能是舞台 謝哲青想的「退休」不一樣</p>
+					<img class="lazyload" :data-src="relate2"/>
+					<p>金鐘影后王琄：允許大齡的自己，像小baby重新學走路</p>
 				</a>
 				<a href="./ding.html" target="_blank" slot="relate-3">
-					<img src="http://via.placeholder.com/480x304"/>
+					<img class="lazyload" :data-src="relate4"/>
 					<p>54歲辭去董事長 丁菱娟第三人生勇敢追夢</p>
 				</a>
 				<a href="./check.html" target="_blank" slot="relate-4">
-					<img src="http://via.placeholder.com/480x304"/>
+					<img class="lazyload" :data-src="relate5"/>
 					<p>三大退休族 達人教你理財術</p>
 				</a>
 			</Relate>
 			<p><br/></p>
-			<FBComment href="https://udn.com/upf/newmedia/2017_data/idel/wang.html" />
+			<FBComment href="https://udn.com/upf/newmedia/2017_data/idel/xie.html" />
 		</ContentContainer>
 		<Foot background-color="#FFFFFF"/>
 	</div>
@@ -152,6 +163,11 @@ import xie1_web from '@/assets/web/xie1.jpg'
 import xie2_web from '@/assets/web/xie2.jpg'
 import xie3_web from '@/assets/web/xie3.jpg'
 
+import relate1 from '@/assets/relate1.jpg'
+import relate2 from '@/assets/relate2.jpg'
+import relate4 from '@/assets/relate4.jpg'
+import relate5 from '@/assets/relate5.jpg'
+
 
 export default {
 	data: function(){
@@ -163,7 +179,11 @@ export default {
             xie3: xie3,
             xie1_web: xie1_web,
             xie2_web: xie2_web,
-            xie3_web: xie3_web
+			xie3_web: xie3_web,
+			relate1: relate1,
+			relate2: relate2,
+			relate4: relate4,
+			relate5: relate5
 		}
 	},
 	components: {
@@ -212,9 +232,9 @@ export default {
 		font-weight: bold;
 		letter-spacing: -1.7px;
 		line-height: 1.36;
-		left: 232px;
+		left: 100px;
 		height: 211px;
-		bottom: 15%;
+		bottom: 30%;
 	}
 	.col-sm-6.left{
         padding-right: 10px;

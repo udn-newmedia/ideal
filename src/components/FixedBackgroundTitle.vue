@@ -99,5 +99,9 @@ export default {
             width: 880px;
             margin: 0 auto;
         }
+        #bg-title2{
+            margin-top: -21px;
+            margin-left: 75px;
+        }
     }
 </style>

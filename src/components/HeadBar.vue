@@ -21,6 +21,9 @@
 </template>
 
 <script>
+
+import Utils from 'udn-newmedia-utils'
+
 import Logo from '@/components/Logo.vue'
 export default {
     name: 'indicator',
@@ -37,8 +40,13 @@ export default {
     },
     methods: {
         handleClick: function(){
-            console.log(5)
             this.isOpen = !this.isOpen
+            ga("send", {
+                "hitType": "event",
+                "eventCategory": "Ham Click",
+                "eventAction": "click",
+                "eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [Ham Click]"
+            });
         },
         handleScroll: function(event){
             let currentH = window.pageYOffset
@@ -62,7 +70,8 @@ export default {
 <style scoped>
     #head-bar {
         position: fixed;
-        background-color: #231815;
+        background-color: #FFFFFF;
+        color: #000000;
         width: 100%;
         top: 0;
         left: 0;
@@ -147,10 +156,10 @@ export default {
         float: left;
     }
     .hbutton:hover{	
-        /* background-color: #FF4612; */
+        background-color: #A5DEE4;
     }
-    .hbutton-select{
-        /* color: #F589BA; */
+    .hbutton.hbutton-select{
+        background-color: #A5DEE4;
     }
     @media screen and (max-width: 1024px){
         #head-bar{
@@ -175,8 +184,9 @@ export default {
         }
         .hbutton {
             margin: 1px auto 0 auto;
-            background-color: #231815;
-            color: #FFFFFF;
+            background-color: #FFFFFF;
+            color: #000000;
+            border-bottom: 1px solid #000000;
             height: 60px;
             padding: 0;
             line-height: 60px;

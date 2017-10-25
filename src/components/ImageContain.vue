@@ -1,7 +1,7 @@
 <template>
     <div class="image-contain">
-        <img class="hidden-md hidden-lg lazyload" :data-src="src">
-        <img class="hidden-xs hidden-sm lazyload" :data-src="srcWeb">
+        <img class="hidden-md hidden-lg" :src="src">
+        <img class="hidden-xs hidden-sm" :src="srcWeb">
         <div class="img-say">{{imgSay}}</div>
     </div>
 </template>

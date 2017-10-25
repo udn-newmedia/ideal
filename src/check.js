@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import App from '@/Check.vue'
 
+import Utils from 'udn-newmedia-utils'
+
 var app = new Vue({
 	el: '#app',
 	template: '<App/>',
@@ -14,12 +16,35 @@ $(document).ready(function(){
 	var w = $(window).width()
 	var h = $(window).height()
 
+	$('a').click(function(){
+		console.log('click')
+		fbq('track', 'ViewContent');
+		ga("send", {
+			"hitType": "event",
+			"eventCategory": "超連結點擊",
+			"eventAction": "click",
+			"eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [" + $(this).attr('href') + "] [" + $(this).parent().attr('class') + "]"
+		});
+	})
+
 	$('.col-sm-4').click(function(){
 		var target = $(this).data('target')
+		ga("send", {
+			"hitType": "event",
+			"eventCategory": "ans click",
+			"eventAction": "click",
+			"eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [ ans " +  target + " click]"
+		});
 		$('html, body').animate({scrollTop : $('#ans-' + target).offset().top}, 1000, function(){});
 	})
 
-	$('.squre').click(function(){
+	$('.squre-btn').click(function(){
+		ga("send", {
+			"hitType": "event",
+			"eventCategory": "squre btn",
+			"eventAction": "click",
+			"eventLabel": "[" + Utils.detectPlatform() + "] [" + document.querySelector('title').innerHTML + "] [squre btn]"
+		});
 		if(w <= 768){
 			$('html, body').animate({scrollTop : $('#btn').offset().top - 50}, 1000, function(){});
 		}

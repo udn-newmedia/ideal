@@ -54,7 +54,7 @@ export default {
         letter-spacing: -1px;
         color: #FFFFFF;
         line-height: 1.1;
-        text-shadow: 0px 3px 7px rgba(0, 0, 0, 0.21);
+        text-shadow: 0 0px 18px rgba(48,48,48,1);
         margin: 0;
     }
     img{
@@ -70,11 +70,6 @@ export default {
             font-size: 45px;
         }
     }
-    @media screen and (min-width: 1025px) and (max-width: 1280px){
-        img{
-            width: auto;
-            height: 100%;
-        }
-    }
+    
 </style>
 

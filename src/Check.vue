@@ -2,10 +2,21 @@
     <div id="app">
         <indicator color="#A5DEE4" />
 		<HeadBar color="#FFFFFF" buttonColor="#000000">
-			<div class="hbutton" data-target="1">王琄的獨身大齡哲學</div>
-			<div class="hbutton" data-target="2">謝哲青的無退休想像</div>
-			<div class="hbutton" data-target="3">丁菱娟活出第三人生</div>
-			<div class="hbutton" data-target="4">三大退休族理財術</div>
+			<a href="./index.html" target="_blank">
+				<div class="hbutton" data-target="1">理想大人指南</div>
+			</a>
+			<a href="./wang.html" target="_blank">
+				<div class="hbutton" data-target="2">王琄的獨身大齡哲學</div>
+			</a>
+			<a href="./xie.html" target="_blank">
+				<div class="hbutton" data-target="3">謝哲青的無退休想像</div>
+			</a>
+			<a href="./ding.html" target="_blank">
+				<div class="hbutton" data-target="4">丁菱娟活出第三人生</div>
+			</a>
+			<a href="./check.html" target="_blank">
+				<div class="hbutton hbutton-select" data-target="5">三大退休族理財術</div>
+			</a>
 		</HeadBar>
         <div id="cover">
             <div id="cover-contain">
@@ -96,7 +107,7 @@
                             <div class="link-text"><i class="fa fa-link"></i><a target="_blank" href="https://event.franklin.com.tw/ft_retire/guide.html?utm_source=udnretire&utm_medium=201710retire&utm_campaign=201710retire">更多退休資訊</a></div>
                         </div>
                     </div>
-                    <div class="squre">
+                    <div class="squre-btn">
                         <i class="fa fa-arrow-up"></i>
                     </div>
                 </div>
@@ -142,7 +153,7 @@
                             <div class="link-text"><i class="fa fa-link"></i><a target="_blank" href="https://event.franklin.com.tw/ft_retire/guide.html?utm_source=udnretire&utm_medium=201710retire&utm_campaign=201710retire">更多退休資訊</a></div>
                         </div>
                     </div>
-                    <div class="squre">
+                    <div class="squre-btn">
                         <i class="fa fa-arrow-up"></i>
                     </div>
                 </div>
@@ -186,7 +197,7 @@
                             <div class="link-text"><i class="fa fa-link"></i><a target="_blank" href="https://event.franklin.com.tw/C2017_04_YRSP/index.html?utm_source=udnretire&utm_medium=201704YRSP&utm_campaign=201704YRSP">青年必備理財妙計</a></div>
                         </div>
                     </div>
-                    <div class="squre">
+                    <div class="squre-btn">
                         <i class="fa fa-arrow-up"></i>
                     </div>
                 </div>
@@ -306,7 +317,7 @@ export default {
         text-decoration: none;
     }
 
-    .squre{
+    .squre-btn{
         width: 88px;
         height: 88px;
         opacity: 0.5;
@@ -317,7 +328,7 @@ export default {
         bottom: 0px;
     }
 
-    .squre .fa-arrow-up{
+    .squre-btn .fa-arrow-up{
         font-size: 87px;
         margin-left: 5px;
         color: #FFFFFF;
@@ -368,12 +379,12 @@ export default {
             font-size: 40px;
             padding: 0 45px;
         }
-        .squre{
+        .squre-btn{
             width: 55px;
             height: 55px;
             right: 0;
         }
-        .squre .fa-arrow-up{
+        .squre-btn .fa-arrow-up{
             font-size: 50px;
         }
         .col-sm-4{
