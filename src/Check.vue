@@ -3,7 +3,7 @@
         <indicator color="#A5DEE4" />
 		<HeadBar color="#FFFFFF" buttonColor="#000000">
 			<a href="./index.html" target="_blank">
-				<div class="hbutton" data-target="1">理想大人指南</div>
+				<div class="hbutton" data-target="1">人人90歲的時代</div>
 			</a>
 			<a href="./wang.html" target="_blank">
 				<div class="hbutton" data-target="2">王琄的獨身大齡哲學</div>
@@ -18,17 +18,13 @@
 				<div class="hbutton hbutton-select" data-target="5">三大退休族理財術</div>
 			</a>
 		</HeadBar>
-        <div id="cover">
-            <div id="cover-contain">
-                <img class="hidden-xs hidden-sm" src="./assets/bg_check.jpg">
-                <img class="hidden-md hidden-lg" src="./assets/bg_check_m.jpg">
-                <h1>三大退休族<br/>達人教你理財術</h1>
-            </div>
-        </div>
+        <Cover :src="bg" :srcWeb="bg_web">
+			<h1>三大退休族 <span class="hidden-md hidden-lg"><br/></span>達人教你理財術</h1>
+		</Cover>
 		<ContentContainer backgroundColor="#FFFFFF">
 			<Share href="https://udn.com/upf/newmedia/2017data/ideal/check.html"/>
 			<p><br/></p>
-			<p>面對退休議題，你的荷包準備好了嗎？富蘭克林證券投顧近期對北、中、南進行《投資人理財行為及投資意向》調查，七成民眾認為退休得靠「自己」。富蘭克林研究部副總經理羅尤美表示，現代人壽命延長，退休時間也延後，在思考退休理財策略時，建議按距離退休的時間規劃，並提早開始進行退休理財準備。</p>
+			<p>面對退休議題，你的荷包準備好了嗎？依據富蘭克林證券投顧近期所進行的《投資人理財行為及投資意向》調查，<b>七成民眾認為退休得靠「自己」</b>。富蘭克林研究部副總經理羅尤美表示，現代人壽命延長，退休時間也延後，在思考退休理財策略時，建議按距離退休的時間規劃，並提早開始進行退休理財準備。</p>
 			<p><br/></p>
 			<p>將近31%的受訪者預期退休後每月的生活開支金額能有5萬元水準，有超過43%認為要倚靠自己規劃的退休金、27.3%則依賴過去存款。</p>
             <p><br/></p>
@@ -40,9 +36,9 @@
             <h2>您預計退休後每個月的生活開支金額約為多少</h2>
             <div id="chart-2"></div>
             <p><br/></p>
-            <p>富蘭克林研究部副總經理羅尤美表示，<b>退休理財規劃應抱持三大觀念</b>，第一，儲蓄不是投資，多數人認為每個月存錢就是準備退休金，但在現今「低利率」時代，物價漲幅遠高於存款利率，中間的差距就得靠投資理財補足。</p>
+            <p>富蘭克林研究部副總經理羅尤美表示，<b>退休理財規劃應先有三大觀念</b>。第一，<b>儲蓄不是投資</b>。多數人認為每個月存錢就是準備退休金，但沒有考慮到現今「低利率」時代，物價漲幅早遠高於存款利息，中間的差距就得靠投資理財補足。</p>
             <p><br/></p>
-            <p>第二，<b>儲蓄、保險並不代表退休金準備</b>，保險是分散風險，若追求出國旅遊休閒等額外支出，這並非保險規劃的初衷。第三，現代人壽命愈來愈長，長壽也將面臨通貨膨脹的風險，建議<b>及早投資，善用時間複利效果</b>，化解通膨帶來的資金壓力，逐步累積退休資產。</p>
+            <p>第二，<b>儲蓄、保險並不代表退休金準備</b>。保險是人身保障優先並分散風險，若是追求出國旅遊休閒等額外支出，這並非保險規劃的初衷。第三，現代人壽命愈來愈長，長壽也將面臨通貨膨脹的風險。建議<b>及早投資，善用時間複利效果</b>，削弱通膨壓力，逐步累積退休資產。</p>
             <p><br/></p>
             <p><br/></p>
             <div class="embed-responsive embed-responsive-16by9">
@@ -52,6 +48,8 @@
             <p><br/></p>
             <p>至於要採用何種策略，才能累積退休資產，迎接樂活的退休生活？富蘭克林證券投顧針對計畫退休15年內的「準退休族」、距離退休15~30年的「成家立業族」、距離退休30年以上的「青年創業族」，分別提出退休理財規劃建議。</p>
             <p><br/></p>
+            <p><br/></p>
+            <h2>你是哪一種族群？點按看專家建議</h2>
             <p><br/></p>
             <div id="btn" class="row">
                 <div class="col-sm-4" data-target="1">
@@ -75,7 +73,9 @@
             <ContentContainer>
                 <div class="cover">
                     <div class="cover-contain">
-                        <div id="cover-animate-1" class="cover-animate"></div>
+                        <div id="cover-animate-1" class="cover-animate">
+                            <img src="./assets/01.gif">
+                        </div>
                     </div>
                     <div class="cover-text-contain">
                         <div class="cover-title">準退休族</div>
@@ -84,9 +84,9 @@
                 </div>
                 <p>此族群大多社會經歷豐富，即將進入退休生活，正面臨如何妥善配置管理退休金及安排退休生活問題。</p>
                 <p><br/></p>
-                <p>羅尤美表示，接近退休族群風險承受度較低，更依賴固定收入來源，投資方面建議以債券型和平衡型基金為主，並可提高債券型基金比重，讓每月配息收入協助退休金達到退休前的薪資收入水準，使退休生活有基本保障。</p>
+                <p>羅尤美表示，接近退休族群風險承受度較低，更依賴固定收入來源，投資方面建議以債券型和平衡型基金為主，並可提高債券型基金比重，理想境界是讓每月配息收入達到退休前的薪資收入，使退休生活維持一致的水準。</p>
                 <p><br/></p>
-                <p>羅尤美建議，可選擇全球總報酬複合債券型或者具有高息優勢的新興債券型基金，作為資產規劃的核心配置。至於股票型基金則可視市場情況，酌量投入，將投資報酬運用在休閒活動等額外支出，當成夢想資金來源。</p>
+                <p>她建議，可選擇全球總報酬複合債券型或者具有高息優勢的新興債券型基金，作為資產規劃的核心配置。至於股票型基金則可視市場情況，酌量投入，或是採取「債券基金孳息按月投資股票基金」的母子基金投資法，讓退休基金自成循環，也可有效管理資產。</p>
                 <p><br/></p>
                 <p><br/></p>
                 <div class="suggest">
@@ -117,8 +117,8 @@
             <ContentContainer>
                 <div class="cover">
                     <div class="cover-contain">
-                        <div class="cover-animate">
-                            <img src="./assets/temp2.png">
+                        <div id="cover-animate-2" class="cover-animate">
+                            <img src="./assets/02.gif">
                         </div>
                     </div>
                     <div class="cover-text-contain">
@@ -130,9 +130,9 @@
                 <p><br/></p>
                 <p>羅尤美表示，「成家立業族」除需負擔父母照顧費用及子女學費外，更是家庭開銷的重要支柱，應把握穩健投資策略。股票型基金建議選擇波動較小的市場，像是成熟市場、或者全球型、區域型股票基金。以佈局全球股市為例，其年化報酬率有近7%的報酬水準（註），並且波動幅度相對小於新興股市，可作為「成家立業族」核心配置選項。</p>
                 <p><br/></p>
-                <p>另外，資產配置上也要開始納入債券型基金，可佈局具有高息優勢的新興債券型或美國高收益債券型基金，將債息收益當成每個月固定支出的收入來源之一。</p>
+                <p>另外，隨著年紀愈靠近退休，資產配置上也要開始納入債券型基金，和準退休族不同的是，可佈局債券資產裡偏向積極的新興債券型、美國高收益債券型基金，提升債息收益以利成為每個月固定支出的收入來源之一。</p>
                 <p><br/></p>
-                <div class="img-say">註：全球股市報酬率採MSCI世界指數成立以來，每個月進場投資10年的年化報酬率平均值，以原幣別計算，截至2017/8/31。不代表任何基金的報酬預估。投資人無法直接投資指數。</div>
+                <div class="img-say">全球股市報酬率採MSCI世界指數成立以來，每個月進場投資10年的年化報酬率平均值，以原幣別計算，截至2017/8/31。不代表任何基金的報酬預估。投資人無法直接投資指數。</div>
                 <p><br/></p>
                 <p><br/></p>
                 <div class="suggest">
@@ -163,8 +163,8 @@
             <ContentContainer>
                 <div class="cover">
                     <div class="cover-contain">
-                        <div class="cover-animate">
-                            <img id="t3" src="./assets/temp3.png">
+                        <div id="cover-animate-3" class="cover-animate">
+                            <img src="./assets/03.gif">
                         </div>
                     </div>
                     <div class="cover-text-contain">
@@ -174,9 +174,9 @@
                 </div>
                 <p>此族群多為進入職場不久的社會新鮮人，理財目標多元，包括創業、留學、結婚和即將到來的子女教育經費等。</p>
                 <p><br/></p>
-                <p>羅尤美建議，年輕族群可積極投資，挑戰潛力大、爆發力強的股票型基金，有機會使財富翻轉，像是新興國家正處於改革階段，具備較高的成長動能，佈局新興股票型基金或者亞洲小型股基金，可優先受惠新興國家改革帶來的投資商機。此外，年輕族群也可視資金情況，適量佈局具有高息收益的債券型基金，擴大資產成長潛力。</p>
+                <p>羅尤美建議，年輕族群可積極投資，挑戰潛力大、爆發力強的股票型基金，有機會使財富翻轉，像是新興國家正處於改革階段，具備較高的成長動能，佈局新興股票型基金或者亞洲小型股基金。此外，年輕族群也可視資金情況，適量納入一些具有高息收益的債券型基金，增加資產佈局的多元性，也擴大資產成長潛力。</p>
                 <p><br/></p>
-                <p>羅尤美提醒，年輕族群可投資的時間較長，即使遇到景氣衰退，仍要持續投資，在市場低點累積更多投資部位，切勿在景氣震盪時退場，而錯失經濟復甦帶來的收益機會。提早開始、定期定額投資，才是正確的退休理財觀念。</p>
+                <p>她也提醒，年輕族群可投資的時間較長，即使遇到景氣衰退，仍要持續投資，在市場低點累積更多投資部位，切勿在景氣震盪時退場，而錯失經濟復甦帶來的收益機會。提早開始、定期定額投資，才是正確的退休理財觀念。</p>
                 <p><br/></p>
                 <p><br/></p>
                 <div class="suggest">
@@ -184,7 +184,7 @@
                         <div class="icon">
                             <img src="./assets/check_btn3.png">
                         </div>
-                        <div class="suggest-title">退休理財建議：積極投資，擴大資產成長潛力，精選股票型基金</div>
+                        <div class="suggest-title">退休理財建議：投資進取，擴大資產成長潛力，精選股票型基金</div>
                         <div class="suggest-text">
                             <ul>
                                 <li>基金投資定期定額為主，單筆投資為輔</li>
@@ -219,9 +219,13 @@
 </template>
 
 <script>
+
+import bg from '@/assets/bg_check_m.jpg'
+import bg_web from '@/assets/bg_check.jpg'
+
 import Indicator from '@/components/Indicator.vue'
 import HeadBar from '@/components/HeadBar.vue'
-import CoverFixedBg from '@/components/CoverFixedBg.vue'
+import Cover from '@/components/Cover.vue'
 import ContentContainer from '@/components/Content.vue'
 import Share from '@/components/Share.vue'
 import FixedBackground from '@/components/FixedBackground.vue'
@@ -234,8 +238,14 @@ import FBComment from '@/components/FBComment.vue'
 import Foot from '@/components/Footer.vue'
 
 export default {
+    data: function(){
+        return{
+            bg: bg,
+            bg_web: bg_web
+        }
+    },
 	components: {
-    	Indicator, HeadBar, CoverFixedBg, ContentContainer, Share, Quote, ImageContain, FixedBackground, Logo, Editor, Relate, FBComment, Foot
+    	Indicator, HeadBar, Cover, ContentContainer, Share, Quote, ImageContain, FixedBackground, Logo, Editor, Relate, FBComment, Foot
 	}
 }
 </script>
@@ -285,6 +295,14 @@ export default {
         width: 600px;
         position: absolute;
         right: 0;
+    }
+
+    .cover-animate img{
+        width: 100%;
+    }
+
+    .cover-animate video{
+        width: 100%;
     }
 
     .suggest{
@@ -394,13 +412,40 @@ export default {
         .col-sm-4 img{
             width: 200px;
         }
+        #cover h1{
+            padding: 0 20px;
+            top: 120px;
+            text-align: left;
+            letter-spacing: -1.2px;
+            position: absolute;
+            font-weight: bold;
+            line-height: 1.5;
+        }
     }
     @media screen and (min-width: 768px) and (max-width: 1024px){
         h1{
             font-size: 45px;
         }
+        #cover h1{
+            padding: 0 20px;
+            top: 120px;
+            text-align: left;
+            letter-spacing: -1.2px;
+            position: absolute;
+            font-weight: bold;
+            line-height: 1.5;
+        }
     }
     @media screen and (min-width: 1025px){
+        #cover h1{
+            position: absolute;
+            font-weight: bold;
+            letter-spacing: -1.7px;
+            line-height: 1.36;
+            left: 50%;
+            margin-left: -326.5px;
+            top: 27%;
+        }
         #cover{
             height: 460px;
         }

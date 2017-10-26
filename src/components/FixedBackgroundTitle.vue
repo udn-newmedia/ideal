@@ -71,9 +71,7 @@ export default {
         z-index: -1;
         transition: opacity 0.7s ease;
     }
-    #title2{
-        margin-left: 45px;
-    }
+    
     img{
         width: 100%;
     }
@@ -92,6 +90,14 @@ export default {
         }
         .bg-title-contain{
             flex-grow: 2;
+        }
+        #title2{
+            margin-left: 45px;
+        }
+    }
+    @media screen and (max-width: 350px){
+        .bg-title{
+            font-size: 28px;
         }
     }
     @media screen and (min-width: 1025px){

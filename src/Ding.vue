@@ -3,7 +3,7 @@
         <indicator color="#A5DEE4" />
 		<HeadBar color="#FFFFFF" buttonColor="#000000">
 			<a href="./index.html" target="_blank">
-				<div class="hbutton" data-target="1">理想大人指南</div>
+				<div class="hbutton" data-target="1">人人90歲的時代</div>
 			</a>
 			<a href="./wang.html" target="_blank">
 				<div class="hbutton" data-target="2">王琄的獨身大齡哲學</div>
@@ -136,7 +136,7 @@
 			<Relate>
 				<a href="./wang.html" target="_blank" slot="relate-1">
 					<img class="lazyload" :data-src="relate1"/>
-					<p>理想大人指南 迎接百歲時代</p>
+					<p>人人90歲的時代 你想怎麼活？</p>
 				</a>
 				<a href="./xie.html" target="_blank" slot="relate-2">
 					<img class="lazyload" :data-src="relate2"/>

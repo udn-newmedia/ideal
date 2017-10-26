@@ -9,7 +9,7 @@
 			<div class="hbutton" data-target="5">三大退休族理財術</div>
 		</HeadBar>
 		<CoverFixedBg :src="bg" :srcWeb="bg_web">
-			<h1>理想大人指南<br/>人人90怎麼活</h1>
+			<h1>人人90歲的時代<br/>你想怎麼活？</h1>
 		</CoverFixedBg>
 		<ContentContainer backgroundColor="#FFFFFF">
 			<Share href="https://udn.com/upf/newmedia/2017data/ideal/index.html"/>
@@ -90,7 +90,7 @@
 			<p><br/></p>
 			<p><br/></p>
 			<div class="tip">
-				<h2>人生下半場 名人這麼過</h2>
+				<h2>人生下半場 他們這麼過</h2>
 				<p><br/></p>
 				<Relate3>
 					<a href="./wang.html" target="_blank" slot="relate-1">

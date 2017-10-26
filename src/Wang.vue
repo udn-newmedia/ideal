@@ -3,7 +3,7 @@
 		<indicator color="#A5DEE4" />
 		<HeadBar color="#FFFFFF" buttonColor="#000000">
 			<a href="./index.html" target="_blank">
-				<div class="hbutton" data-target="1">理想大人指南</div>
+				<div class="hbutton" data-target="1">人人90歲的時代</div>
 			</a>
 			<a href="./wang.html" target="_blank">
 				<div class="hbutton hbutton-select" data-target="2">王琄的獨身大齡哲學</div>
@@ -28,6 +28,13 @@
 			<p><br/></p>
 			<p>現實生活中她單身無子，表演舞台上卻演活各種母親角色，「演舞台劇讓我學會不眷戀青春。」她說，舞台劇和電視劇不同，在短時間內演完就結束，然後繼續往前走，就像爬過一個山頭又過一個山頭。人生也是如此，走到大齡階段，王琄不回望過往，而是帶著坦然自在的心情，去翻越她人生的下一座山。</p>
 		</ContentContainer>
+		<div class="you-back">
+			<div class="you-contain">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zB1dkFxu_Ok?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
 		<ContentContainer backgroundColor="#FFFFFF">
 			<h2>接受自己走在「大齡」的路上</h2>
 			<p><br/></p>
@@ -135,7 +142,7 @@
 			<Relate>
 				<a href="./wang.html" target="_blank" slot="relate-1">
 					<img class="lazyload" :data-src="relate1"/>
-					<p>理想大人指南 迎接百歲時代</p>
+					<p>人人90歲的時代 你想怎麼活？</p>
 				</a>
 				<a href="./xie.html" target="_blank" slot="relate-2">
 					<img class="lazyload" :data-src="relate3"/>
@@ -270,6 +277,15 @@ export default {
     .col-sm-6.right{
         padding-left: 10px;
     }
+	.you-back{
+		background-color: #FFFFFF;
+	}
+	.you-contain{
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+	}
 }
+
 
 </style>

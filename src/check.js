@@ -89,16 +89,6 @@ $(document).ready(function(){
 		})
 	}
 
-	
-	
-	var animation = bodymovin.loadAnimation({
-		container: document.getElementById('cover-animate-1'),
-		renderer: 'svg',
-		loop: true,
-		autoplay: true,
-		path: './static/cover-1.json'
-	})
-
 	var scroll_now
 	var chart, chart_flag = false, chart_flag2 = false
 

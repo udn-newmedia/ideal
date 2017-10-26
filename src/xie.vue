@@ -3,7 +3,7 @@
 		<indicator color="#A5DEE4" />
 		<HeadBar color="#FFFFFF" buttonColor="#000000">
 			<a href="./index.html" target="_blank">
-				<div class="hbutton" data-target="1">理想大人指南</div>
+				<div class="hbutton" data-target="1">人人90歲的時代</div>
 			</a>
 			<a href="./wang.html" target="_blank">
 				<div class="hbutton" data-target="2">王琄的獨身大齡哲學</div>
@@ -30,6 +30,13 @@
 			<p><br/></p>
 			<p>正值前中年的謝哲青，經歷過豐富的人生上半場，正在轉化過去經驗帶來的養分，年輕時無法領悟、體會的事情，現在慢慢有了輪廓，他也正在將這些收穫，帶給他的讀者、觀眾。對他而言，人生各階段都有無可取代的體悟、智慧，「如果用年齡框住自己的可能性，就太可惜了。」</p>
 		</ContentContainer>
+		<div class="you-back">
+			<div class="you-contain">
+				<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/O3djrjcsGL8?rel=0" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
 		<ContentContainer backgroundColor="#FFFFFF">
 			<h2>從父親身上 看到不一樣的「退休」</h2>
 			<p><br/></p>
@@ -44,7 +51,7 @@
             <p>若將這樣的觀念放到他現在的工作，謝哲青想像，現在他主要在媒體推廣閱讀及藝文、藝術教育，但「江山代有人才出」，他不一定要一直在第一線，可以將現在的工作職位交給更有能力的人，但不代表從此休息，還是可以帶著自己的人生閱歷，去尋找能發揮的角落，「不是從此退出生產線。」</p>
             <p><br/></p>
             <p><br/></p>
-            <ImageContain :src="xie1" :src-web="xie1_web" imgSay="對謝哲青而言，從沒想過「退休」，現在他在媒體上推廣閱讀、藝文，未來他不一定要一直在第一線，廟口、教室、書店，都可以是他繼續做喜歡工作的舞台，經驗不會因此中斷。照片來源／謝哲青提供"/>
+            <ImageContain :src="xie1" :src-web="xie1_web" imgSay="對謝哲青而言，從沒想過「退休」，現在他在媒體上推廣閱讀、藝文，未來他不一定要一直在第一線，廟口、教室、書店，都可以是他繼續做喜歡工作的舞台，經驗不會因此中斷。照片來源／取自謝哲青臉書"/>
             <p><br/></p>
             <p><br/></p>
             <h2>人生沒有時間表 別用年齡設階段</h2>
@@ -80,7 +87,7 @@
 			<p><br/></p>
 			<p>運動過程中，更重要的是能認識自己的身體。謝哲青說，很多人退休開始去旅行，但因為對身體不夠了解，以為身體好，才發現身體反應與自己認識的不同。實際開始活動身體，才會知道自己身體的極限，重新了解、對自己的身體誠實。</p>
 		</ContentContainer>
-		<FixedBackground :src="xie3" :src-web="xie3_web" text="謝哲青說，很多人因為不了解自己的身體，退休後出去旅遊，才發現身體沒想像中強健，運動，是幫助自己認識身體的重要途徑。照片來源／謝哲青提供" />
+		<FixedBackground :src="xie3" :src-web="xie3_web" text="謝哲青說，很多人因為不了解自己的身體，退休後出去旅遊，才發現身體沒想像中強健，運動，是幫助自己認識身體的重要途徑。照片來源／取自謝哲青臉書" />
 		<ContentContainer backgroundColor="#FFFFFF">
 			<p>除了認識自己的身體，謝哲青過去常在演講中鼓勵台下觀眾「做自己」，這句話不只針對年輕人，也是他給邁入熟齡者的建議。「對自己誠實，找回忽略的內心感受、曾放棄的追求。」</p>
 			<p><br/></p>
@@ -115,7 +122,7 @@
 			<Relate>
 				<a href="./wang.html" target="_blank" slot="relate-1">
 					<img class="lazyload" :data-src="relate1"/>
-					<p>理想大人指南 迎接百歲時代</p>
+					<p>人人90歲的時代 你想怎麼活？</p>
 				</a>
 				<a href="./xie.html" target="_blank" slot="relate-2">
 					<img class="lazyload" :data-src="relate2"/>
@@ -242,6 +249,14 @@ export default {
     .col-sm-6.right{
         padding-left: 10px;
     }
+	.you-back{
+		background-color: #FFFFFF;
+	}
+	.you-contain{
+		width: 100%;
+		max-width: 1280px;
+		margin: 0 auto;
+	}
 }
 
 </style>
