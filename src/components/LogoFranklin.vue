@@ -6,10 +6,10 @@
             <span class="f-text">富蘭克林‧國民的基金</span>
         </div>
         </a>
-        <div class="logo">
+        <div class="logo udn">
             <a href="https://udn.com/news/index" target="_blank"><img src="https://udn.com/upf/newmedia/image/udn-logo.svg"></a>
         </div>
-        <div class="logo">
+        <div class="logo nmd">
             <a href="https://udn.com/upf/newmedia/udn_newmedia/" target="_blank"><img src="https://udn.com/upf/newmedia/image/nmd-logo.svg"></a>
         </div>
     </div>
@@ -35,6 +35,40 @@ export default {
         color: #004690;
         font-weight: bold;
     }
+    
+    /*IE10+ */
+    @media all and (-ms-high-contrast:none), all and (-ms-high-contrast:active) {
+        .logo.udn {
+            height: 30.92px;
+        }
+
+        .logo.nmd {
+            height: 58.56px;            
+        }
+    }
+
+    /* Microsoft Edge Browser 12,13 only - @supports method */
+    @supports (-ms-accelerator:true) {
+        .logo.udn {
+            height: 30.92px;
+        }
+
+        .logo.nmd {
+            height: 58.56px;
+        }
+    }
+
+    /* Microsoft Edge Browser 12+ (All) - @supports method */
+    @supports (-ms-ime-align:auto) {
+        .logo.udn {
+            height: 30.92px;
+        }
+
+        .logo.nmd {
+            height: 58.56px;
+        }
+    }
+
     @media screen and (max-width: 1024px){
         .logo-block{
             margin-top: 32px;

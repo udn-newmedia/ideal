@@ -22,7 +22,7 @@
 			<h1>三大退休族 <span class="hidden-md hidden-lg"><br/></span>達人教你理財術</h1>
 		</Cover>
 		<ContentContainer backgroundColor="#FFFFFF">
-			<Share href="https://udn.com/upf/newmedia/2017data/ideal/check.html"/>
+			<Share href="https://udn.com/upf/newmedia/2017_data/ideal/check.html"/>
 			<p><br/></p>
 			<p>面對退休議題，你的荷包準備好了嗎？依據富蘭克林證券投顧近期所進行的《投資人理財行為及投資意向》調查，<b>七成民眾認為退休得靠「自己」</b>。富蘭克林研究部副總經理羅尤美表示，現代人壽命延長，退休時間也延後，在思考退休理財策略時，建議按距離退休的時間規劃，並提早開始進行退休理財準備。</p>
 			<p><br/></p>
@@ -42,7 +42,8 @@
             <p><br/></p>
             <p><br/></p>
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YFf22DyHGJk" frameborder="0" allowfullscreen></iframe>
+                <!--<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/YFf22DyHGJk" frameborder="0" allowfullscreen></iframe>-->
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/EDm7o23djjs" frameborder="0" allowfullscreen></iframe>
             </div>
             <p><br/></p>
             <p><br/></p>
@@ -209,10 +210,10 @@
 				<div>聯合報新媒體中心企畫製作</div>
 			</Editor>
             <p><br/></p>
-            <Share href="https://udn.com/upf/newmedia/2017data/ideal/check.html"/>
+            <Share href="https://udn.com/upf/newmedia/2017_data/ideal/check.html"/>
 			<Logo />
             <p><br/></p>
-			<FBComment href="https://udn.com/upf/newmedia/2017_data/idel/check.html" />
+			<FBComment href="https://udn.com/upf/newmedia/2017_data/ideal/check.html" />
         </ContentContainer>
         <Foot />
     </div>
@@ -353,6 +354,40 @@ export default {
         color: #FFFFFF;
     }
 
+    /*IE10+ */
+    @media all and (-ms-high-contrast:none), all and (-ms-high-contrast:active) {
+        #chart-1 {
+            height: 600px;
+        }
+
+        #chart-2  {
+            height: 476px;
+        }
+    }
+    /* Microsoft Edge Browser 12,13 only - @supports method */
+
+    @supports (-ms-accelerator:true) {
+        #chart-1 {
+            height: 600px;
+        }
+
+        #chart-2  {
+            height: 476px;
+        }
+    
+    }
+    /* Microsoft Edge Browser 12+ (All) - @supports method */
+
+    @supports (-ms-ime-align:auto) {
+        #chart-1 {
+            height: 600px;
+        }
+
+        #chart-2  {
+            height: 476px;
+        }
+    }
+
     @media screen and (max-width: 767px){
         #cover{
             height: 100vh;
@@ -445,6 +480,7 @@ export default {
             left: 50%;
             margin-left: -326.5px;
             top: 27%;
+            text-shadow: 0 0px 10px rgba(0,0,0,.2);
         }
         #cover{
             height: 460px;
@@ -516,5 +552,9 @@ export default {
             margin-left: 300px;
         }
     }
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
 
 </style>

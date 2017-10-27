@@ -22,7 +22,7 @@
 			<h1>54歲辭去董事長<br/>丁菱娟第三人生勇敢追夢</h1>
 		</CoverFixedBg>
         <ContentContainer backgroundColor="#F1E9E4">
-			<Share href="https://udn.com/upf/newmedia/2017data/ideal/ding.html"/>
+			<Share href="https://udn.com/upf/newmedia/2017_data/ideal/ding.html"/>
 			<p><br/></p>
 			<p>年過五十，來到人生中場，「心」明明還很年輕，年齡數字卻不斷往上增加，有些不服氣、不甘心，「我的人生就這樣了嗎？」這是許多中年世代的共同心境，對「公關教母」丁菱娟來說也是如此。</p>
 			<p><br/></p>
@@ -122,7 +122,7 @@
 			</div>
             <p><br/></p>
 			<p><br/></p>
-            <Share href="https://udn.com/upf/newmedia/2017data/ideal/ding.html"/>
+            <Share href="https://udn.com/upf/newmedia/2017_data/ideal/ding.html"/>
 			<Logo />
 			<p><br/></p>
 			<Editor>
@@ -134,15 +134,15 @@
 			</Editor>
             <p><br/></p>
 			<Relate>
-				<a href="./wang.html" target="_blank" slot="relate-1">
+				<a href="./index.html" target="_blank" slot="relate-1">
 					<img class="lazyload" :data-src="relate1"/>
 					<p>人人90歲的時代 你想怎麼活？</p>
 				</a>
-				<a href="./xie.html" target="_blank" slot="relate-2">
+				<a href="./wang.html" target="_blank" slot="relate-2">
 					<img class="lazyload" :data-src="relate2"/>
-					<p>金鐘影后王琄：允許大齡的自己，像小baby重新學走路</p>
+					<p>金鐘影后王琄：允許大齡的自己，像小baby從頭學走路</p>
 				</a>
-				<a href="./ding.html" target="_blank" slot="relate-3">
+				<a href="./xie.html" target="_blank" slot="relate-3">
 					<img class="lazyload" :data-src="relate3"/>
 					<p>廟口也能是舞台 謝哲青想的「退休」不一樣</p>
 				</a>
@@ -152,7 +152,7 @@
 				</a>
 			</Relate>
 			<p><br/></p>
-			<FBComment href="https://udn.com/upf/newmedia/2017_data/idel/ding.html" />
+			<FBComment href="https://udn.com/upf/newmedia/2017_data/ideal/ding.html" />
         </ContentContainer>
         <Foot background-color="#FFFFFF"/>
     </div>
@@ -266,6 +266,10 @@ export default {
     .col-sm-6.right{
         padding-left: 10px;
     }
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
 }
 
 </style>

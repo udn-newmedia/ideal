@@ -34,7 +34,7 @@ export default {
         if(this.text == undefined){
             this.isHidden = true
         }
-        window.addEventListener('scroll', this.handleScroll)
+        window.addEventListener('scroll', this.handleScroll);
     }
 }
 </script>

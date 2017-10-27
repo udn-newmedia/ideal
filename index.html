@@ -22,14 +22,17 @@
     <meta name="copyright" content="聯合報"/>
     <meta name="application-name" content="人人90歲的時代 你想怎麼活？"/>
 
+    <meta property="fb:admins" content="671188086">
+    <meta property="fb:app_id" content="1010324812347164">
+
     <link rel="icon" type="image/ico" href="https://udn.com/upf/newmedia/image/udn-icon.ico"/>
 
     <link rel="stylesheet" href="https://udn.com/upf/newmedia/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://udn.com/upf/newmedia/css/bootstrap.min.css">
     
     <script src="https://udn.com/upf/newmedia/js/lazysizes.min.js"></script>
-    <script src=https://udn.com/upf/newmedia/js/bodymovin.min.js></script>
-    <script src=https://udn.com/upf/newmedia/js/jquery-3.2.1.min.js></script>
+    <script src='https://udn.com/upf/newmedia/js/bodymovin.min.js'></script>
+    <script src='https://udn.com/upf/newmedia/js/jquery-3.2.1.min.js'></script>
 
     <!-- Facebook Pixel Code -->
 	<script>
@@ -130,13 +133,15 @@
 
 <body>
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/zh_TW/sdk.js?t-1#xfbml=1&version=v2.9&appId=1010324812347164";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    <script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/zh_TW/sdk.js?t-1#xfbml=1&version=v2.9&appId=1010324812347164";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
 	<div id="app"></div>
 </body>
 </html>

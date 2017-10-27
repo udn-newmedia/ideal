@@ -38,12 +38,15 @@ $(document).ready(function(){
 
 			if(target == 1 || target == 2 || target == 3){
 				$('html, body').animate({scrollTop : $('#section-' + target).offset().top}, 1000, function(){});
+				$("#hbutton-contain").toggleClass("open");
 			}
 			else if(target == 4){
 				window.open('./wang.html')
+				$("#hbutton-contain").toggleClass("open");
 			}
 			else if(target == 5){
 				window.open('./check.html')
+				$("#hbutton-contain").toggleClass("open");
 			}
 			console.log($(this).data('target'))
 		})

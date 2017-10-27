@@ -19,19 +19,20 @@
 			</a>
 		</HeadBar>
 		<CoverFixedBg :src="bg" :srcWeb="bg_web">
-			<h1>金鐘影后王琄：<br/>允許大齡的自己 像小baby重新學走路</h1>
+			<h1>金鐘影后王琄：<br/>允許大齡的自己 像小baby從頭學走路</h1>
 		</CoverFixedBg>
 		<ContentContainer backgroundColor="#F1E9E4">
-			<Share href="https://udn.com/upf/newmedia/2017data/ideal/wang.html"/>
+			<Share href="https://udn.com/upf/newmedia/2017_data/ideal/wang.html"/>
 			<p><br/></p>
-			<p>「我沒有小孩、又獨居，也不養寵物，好像很可憐，不！絕對不自憐！」說著這句話的54歲金鐘影后王琄，縱橫劇場、電影、電視劇三十多年，曾在十年內拿下三座金鐘。</p>
+			<p>「我沒有小孩、又獨居，也不養寵物，好像很可憐，不！絕對不自憐！」說著這句話的54歲金鐘影后王琄，縱橫劇場、電影、電視劇三十多年，曾在十一年內拿下三座金鐘。</p>
 			<p><br/></p>
 			<p>現實生活中她單身無子，表演舞台上卻演活各種母親角色，「演舞台劇讓我學會不眷戀青春。」她說，舞台劇和電視劇不同，在短時間內演完就結束，然後繼續往前走，就像爬過一個山頭又過一個山頭。人生也是如此，走到大齡階段，王琄不回望過往，而是帶著坦然自在的心情，去翻越她人生的下一座山。</p>
 		</ContentContainer>
 		<div class="you-back">
 			<div class="you-contain">
 				<div class="embed-responsive embed-responsive-16by9">
-					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zB1dkFxu_Ok?rel=0" frameborder="0" allowfullscreen></iframe>
+					<!--<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zB1dkFxu_Ok?rel=0" frameborder="0" allowfullscreen></iframe>-->
+					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/1sQ-jt3644c?rel=0" frameborder="0" allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
@@ -47,7 +48,7 @@
 		</ContentContainer>
 		<FixedBackground :src="wang1" :src-web="wang1_web" text="王琄說，每一個戲劇角色都會和內在的自己產生連結，讓她愈來愈了解自己，接受自己走在大齡這條路上。" />
 		<ContentContainer backgroundColor="#FFFFFF">
-			<h2>40歲 開始拆掉身上的認同</h2>
+			<h2>有白髮、有皺紋...角色更豐潤</h2>
 			<p><br/></p>
 			<p>面對大齡，王琄態度瀟灑，不畏懼外界目光，或許跟她內在潛藏的叛逆有關。「我從小就一直在想，為什麼要當乖學生，為什麼要這樣、不可以那樣。」國高中時期的王琄個性孤僻，當年大學聯考失利後，曾到紡織廠打工賺錢，重考兩年考上藝術學院（現台北藝術大學）戲劇系後，認識形形色色的人，她才發現自己原來不奇怪，原來活著也可以這樣。</p>
 			<p><br/></p>
@@ -127,7 +128,7 @@
 			</div>
 			<p><br/></p>
 			<p><br/></p>
-			<Share href="https://udn.com/upf/newmedia/2017data/ideal/wang.html"/>
+			<Share href="https://udn.com/upf/newmedia/2017_data/ideal/wang.html"/>
 			<Logo />
 			<p><br/></p>
 			<Editor>
@@ -140,7 +141,7 @@
 			</Editor>
 			<p><br/></p>
 			<Relate>
-				<a href="./wang.html" target="_blank" slot="relate-1">
+				<a href="./index.html" target="_blank" slot="relate-1">
 					<img class="lazyload" :data-src="relate1"/>
 					<p>人人90歲的時代 你想怎麼活？</p>
 				</a>
@@ -158,7 +159,7 @@
 				</a>
 			</Relate>
 			<p><br/></p>
-			<FBComment href="https://udn.com/upf/newmedia/2017_data/idel/wang.html" />
+			<FBComment href="https://udn.com/upf/newmedia/2017_data/ideal/wang.html" />
 		</ContentContainer>
 		<Foot background-color="#FFFFFF"/>
 	</div>
@@ -287,5 +288,8 @@ export default {
 	}
 }
 
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
 
 </style>

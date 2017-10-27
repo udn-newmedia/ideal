@@ -203,6 +203,7 @@ export default {
             padding-top: 20%;
         }
     }
+    
     @media screen and (min-width: 1025px){
         #head-bar{
             height: 50px;

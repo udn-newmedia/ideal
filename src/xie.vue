@@ -22,7 +22,7 @@
 			<h1>廟口也能是舞台<br/>謝哲青想的「退休」不一樣</h1>
 		</CoverFixedBg>
 		<ContentContainer backgroundColor="#F1E9E4">
-			<Share href="https://udn.com/upf/newmedia/2017data/ideal/xie.html"/>
+			<Share href="https://udn.com/upf/newmedia/2017_data/ideal/xie.html"/>
 			<p><br/></p>
 			<p>一生都在各地旅行的旅遊作家謝哲青，是作家，也是主持人、文史研究者。走訪過世界各國的他，給人的印象總是活躍，無法停下探索新事物的腳步。這樣的性格特色，更讓人好奇，他的人生字典裡，是否有「退休」二字，又是怎麼詮釋這個字眼。</p>
 			<p><br/></p>
@@ -107,7 +107,7 @@
 			</div>
 			<p><br/></p>
 			<p><br/></p>
-			<Share href="https://udn.com/upf/newmedia/2017data/ideal/xie.html"/>
+			<Share href="https://udn.com/upf/newmedia/2017_data/ideal/xie.html"/>
 			<Logo />
 			<p><br/></p>
 			<Editor>
@@ -120,13 +120,13 @@
 			</Editor>
 			<p><br/></p>
 			<Relate>
-				<a href="./wang.html" target="_blank" slot="relate-1">
+				<a href="./index.html" target="_blank" slot="relate-1">
 					<img class="lazyload" :data-src="relate1"/>
 					<p>人人90歲的時代 你想怎麼活？</p>
 				</a>
-				<a href="./xie.html" target="_blank" slot="relate-2">
+				<a href="./wang.html" target="_blank" slot="relate-2">
 					<img class="lazyload" :data-src="relate2"/>
-					<p>金鐘影后王琄：允許大齡的自己，像小baby重新學走路</p>
+					<p>金鐘影后王琄：允許大齡的自己，像小baby從頭學走路</p>
 				</a>
 				<a href="./ding.html" target="_blank" slot="relate-3">
 					<img class="lazyload" :data-src="relate4"/>
@@ -138,7 +138,7 @@
 				</a>
 			</Relate>
 			<p><br/></p>
-			<FBComment href="https://udn.com/upf/newmedia/2017_data/idel/xie.html" />
+			<FBComment href="https://udn.com/upf/newmedia/2017_data/ideal/xie.html" />
 		</ContentContainer>
 		<Foot background-color="#FFFFFF"/>
 	</div>
@@ -259,4 +259,7 @@ export default {
 	}
 }
 
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
 </style>

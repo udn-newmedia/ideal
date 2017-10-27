@@ -61,6 +61,7 @@ export default {
     }
     .bg-title span{
         background-color: #A5DEE4;
+        padding: 3px;
     }
     .back-bg-contain{
         position: fixed;
