@@ -60,7 +60,7 @@ $(document).ready(function(){
 			renderer: 'svg',
 			loop: false,
 			autoplay: false,
-			path: './static/mobile_chart1/data.json'
+			path: './static/mobile_chart01/data.json'
 		})
 	
 		var chart_animation2 = bodymovin.loadAnimation({
@@ -68,7 +68,7 @@ $(document).ready(function(){
 			renderer: 'svg',
 			loop: false,
 			autoplay: false,
-			path: './static/mobile_chart2/data.json'
+			path: './static/mobile_chart02/data.json'
 		})
 	}
 	else{
@@ -77,7 +77,7 @@ $(document).ready(function(){
 			renderer: 'svg',
 			loop: false,
 			autoplay: false,
-			path: './static/web_chart1/data.json'
+			path: './static/web_chart01/data.json'
 		})
 	
 		var chart_animation2 = bodymovin.loadAnimation({
@@ -85,7 +85,7 @@ $(document).ready(function(){
 			renderer: 'svg',
 			loop: false,
 			autoplay: false,
-			path: './static/web_chart2/data.json'
+			path: './static/web_chart02/data.json'
 		})
 	}
 
