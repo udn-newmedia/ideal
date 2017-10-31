@@ -15,7 +15,7 @@
 				<div class="hbutton hbutton-select" data-target="4">丁菱娟活出第三人生</div>
 			</a>
 			<a href="./check.html" target="_blank">
-				<div class="hbutton" data-target="5">三大退休族理財術</div>
+				<div class="hbutton" data-target="5">三世代退休理財術</div>
 			</a>
 		</HeadBar>
 		<CoverFixedBg :src="bg" :srcWeb="bg_web">

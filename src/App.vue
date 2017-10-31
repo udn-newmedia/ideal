@@ -6,7 +6,7 @@
 			<div class="hbutton" data-target="2">老黑的下半場哲學</div>
 			<div class="hbutton" data-target="3">做好打延長賽準備</div>
 			<div class="hbutton" data-target="4">名人的大齡人生</div>
-			<div class="hbutton" data-target="5">三大退休族理財術</div>
+			<div class="hbutton" data-target="5">三世代退休理財術</div>
 		</HeadBar>
 		<CoverFixedBg :src="bg" :srcWeb="bg_web">
 			<h1>人人90歲的時代<br/>你想怎麼活？</h1>
