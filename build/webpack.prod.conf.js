@@ -57,9 +57,9 @@ const webpackConfig = merge(baseWebpackConfig, {
       chunks: ['vendor', 'manifest', 'app'],
       inject: true,
       minify: {
-        removeComments: true,
+        removeComments: false,
         collapseWhitespace: false,
-        removeAttributeQuotes: true
+        removeAttributeQuotes: false
         // more options:
         // https://github.com/kangax/html-minifier#options-quick-reference
       },
